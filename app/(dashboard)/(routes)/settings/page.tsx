@@ -4,12 +4,12 @@ import { Heading } from "@/components/heading";
 import { SubscriptionButton } from "@/components/subscription-button";
 import { checkSubscription } from "@/lib/subscription";
 
-const SettingsPage = async () => {
-  const isPro = await checkSubscription();
+const SettingsPage =async () => {
+ const isPro = await checkSubscription();
 
   return ( 
     <div>
-      <Heading
+    <Heading
         title="Settings"
         description="Manage account settings."
         icon={Settings}
